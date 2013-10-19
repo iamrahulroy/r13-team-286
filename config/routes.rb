@@ -1,4 +1,7 @@
 Crumblr::Application.routes.draw do
+  get "links/show"
+  get "links/new"
+  get "links/create"
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -6,6 +9,7 @@ Crumblr::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   resources :pages
+  resources :links
   root :to => "pages#index"
 
   # Example of regular route:

@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is dedicated to remove pain from job search process. 
 
 Things you may want to cover:
 
-* Ruby version
+* Rails version: 4.0.0
 
-* System dependencies
+* Database: MySql
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Checkout Gemfile for more information
 
 
-Please feel free to use a different markup language if you do not plan to run
+This  is a work in progress.
 <tt>rake doc:app</tt>.

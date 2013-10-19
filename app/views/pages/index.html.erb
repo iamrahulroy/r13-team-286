@@ -1,4 +1,15 @@
-<h2>Index Homepage</h2>
+
+<%= render "/layouts/header" %>
+
+<div class="center hero-unit">
+  <h1>Welcome to the Crumblr</h1>
+
+  <h2>
+    This application is a result of Rails Rumble.
+  </h2>
+
+  <%= link_to "Find Jobs Now!", "/links", class: "btn btn-large btn-primary" %>
+</div>
 
 
 <%= link_to "Add a link", new_link_path %>

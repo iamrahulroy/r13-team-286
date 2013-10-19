@@ -1,14 +1,23 @@
-<h1>All Job Links</h1>
-
+<div class="page-header">
+	<h1>All Job Links</h1>
+</div>
 <ul id="links">
 	<% @links.each do |link| %>
 		<li>
-			<h1><%= link_to link.title, link_path(link), class: 'link_title' %></h1><br/>
+			
+			<h3><%= link_to link.title, link_path(link), class: 'link_title' %>
+			</h3>
+			<br/>
+			<div class="well">
 			<p>Job Link<%= link_to link.url, link.url %></p><br/>
 			<p>Description:<%= link.description %></p>
-			<p><%= link_to "Comments", link %>
+			<%= link_to "Comments", link %>
+			</div>
+			
 		</li>
 	<% end %>
 </ul>
-<%= paginate @links %>
-<%= link_to "Add New Job Link", new_link_path(@links) %>
+<div class="pagination ">
+	<%= paginate @links %>
+</div>
+<%= link_to "Add New Job Link", new_link_path(@links), class: "btn btn-primary" %>

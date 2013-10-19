@@ -6,19 +6,19 @@
 	</ul>
 
 
-	<div class="field">
+	<div class="field span4">
 		<%= f.label :title %><br />
 		<%= f.text_field :title%>
 	</div>
-	<div class="field">
+	<div class="field span4">
 		<%= f.label "Job link url" %><br />
 		<%= f.text_field :url %>
 	</div>
-	<div class="description">
+	<div class="description span4">
 		<%= f.label :description %><br />
 		<%= f.text_area :description %><br />
 	</div>
-	<div class="actions">
+	<div class="actions btn-primary">
 		<%= f.submit %>
 	</div>
 <% end %>

@@ -1,13 +1,13 @@
 <h1>All Job Links</h1>
 
 <ul id="links">
-	<% @link.each do |link| %>
+	<% @links.each do |links| %>
 		<li>
-			<h1><%= link_to link.title, link_path(link), class: 'link_title' %></h1><br/>
-			<p>Job Link<%= link_to link.url, link.url %></p><br/>
-			<p>Description:<%= link.description %></p>
+			<h1><%= link_to links.title, links_path(links), class: 'link_title' %></h1><br/>
+			<p>Job Link<%= link_to links.url, links.url %></p><br/>
+			<p>Description:<%= links.description %></p>
 		</li>
 	<% end %>
 </ul>
- <!-- <%= paginate @link %> -->
-<%= link_to "Add New Job Link", new_link_path(@link) %>
+
+<%= link_to "Add New Job Link", links_new_path(@links) %>

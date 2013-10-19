@@ -1,6 +1,6 @@
-<%= form_for(@link) do |f| %>
+<%= form_for(@links) do |f| %>
 	<ul>
-		<% @link.errors.full_messages.each do |error| %>
+		<% @links.errors.full_messages.each do |error| %>
 		  <li><%= error %></li>
 		<% end %>
 	</ul>

@@ -1,25 +1,25 @@
 class LinksController < ApplicationController
 
 	def index
-		@link = Link.all
-    # @link = Link.order("name").page(params[:page]).per(3)
+		@links = Link.all
+    # @links = Link.order("name").page(params[:page]).per(3)
 	end
 
   def show
-  	@link = Link.find(params[:id])
+  	@links = Link.find(params[:id])
   end
 
   def new
-  	@link = Link.new
+  	@links = Link.new
   end
 
   def create
-  	@link = Link.new(link_params)
-  	@link.save
+  	@links = Link.new(link_params)
+  	@links.save
 
-  	flash.notice = "Link '#{@link.title} Created!"
+  	flash.notice = "Link '#{@links.title} Created!"
 
-  	redirect_to link_path(@link)
+  	redirect_to link_path(@links)
   end
 
   def link_params

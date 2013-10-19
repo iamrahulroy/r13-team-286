@@ -1,2 +1,9 @@
-<h1>Links#show</h1>
-<p>Find me in app/views/links/show.html.erb</p>
+<h1><%= @link.title %></h1>
+<p>
+	<b>Job Link URL</b>:<%= link_to @link.url, @link.url %>
+</p>
+
+<p>
+	<b>Job Description</b>: <%= @link.description %>
+</p>
+

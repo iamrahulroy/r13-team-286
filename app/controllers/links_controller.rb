@@ -2,6 +2,7 @@ class LinksController < ApplicationController
 
 	def index
 		@link = Link.all
+    # @link = Link.order("name").page(params[:page]).per(3)
 	end
 
   def show

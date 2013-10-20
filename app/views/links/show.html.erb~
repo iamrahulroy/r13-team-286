@@ -29,10 +29,9 @@
             <h4>Leave a Comment:</h4>
             <form role="form">
               <div class="form-group">
-                <!-- <textarea class="form-control" rows="3"></textarea> -->
-                <%= render "/reviews/form" %>
-                
+                <textarea class="form-control" rows="3"></textarea>
               </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
           
@@ -51,9 +50,9 @@
           <div class="well">
             <h4>Blog Search</h4>
             <div class="input-group">
-              <input type="text" class="custom-form-control">
+              <input type="text" class="form-control">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Search</button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
               </span>
             </div><!-- /input-group -->
           </div><!-- /well -->

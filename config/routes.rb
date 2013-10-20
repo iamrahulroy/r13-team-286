@@ -1,4 +1,6 @@
 Crumblr::Application.routes.draw do
+  resources :reviews
+
   get "links/show"
   get "links/new"
   get "links/create"

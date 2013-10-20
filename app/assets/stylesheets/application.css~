@@ -19,6 +19,7 @@
  .span3 ul 
  {
  	list-style-type: none;
+ 	color: blue;
  }
  
  .input-group .custom-form-control
